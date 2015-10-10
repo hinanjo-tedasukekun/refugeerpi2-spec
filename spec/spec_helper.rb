@@ -23,6 +23,9 @@ options[:user] ||= Etc.getlogin
 set :host,        options[:host_name] || host
 set :ssh_options, options
 
+# Raspbian Jessie では OS 判別がうまく動作しないので指定する
+set :os, family: 'debian', release: '8', arch: 'armv7l'
+
 # Disable sudo
 # set :disable_sudo, true
 
