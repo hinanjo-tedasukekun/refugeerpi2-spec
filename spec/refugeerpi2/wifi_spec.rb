@@ -1,6 +1,8 @@
+# Wi-Fi アクセスポイントに関する spec
+
 require 'spec_helper'
 
-packages = %w(hostapd dnsmasq)
+packages = %w(hostapd dnsmasq iw)
 
 packages.each do |p|
   describe package(p) do

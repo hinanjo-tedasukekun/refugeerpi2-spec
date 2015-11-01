@@ -1,3 +1,5 @@
+# フォントに関する spec
+
 require 'spec_helper'
 
 packages = %w(fonts-takao fonts-migmix)
