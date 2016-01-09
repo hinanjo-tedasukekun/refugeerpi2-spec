@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-packages = %w(gtk2-engines-murrine)
+packages = %w(obconf gtk2-engines-murrine)
 
 packages.each do |p|
   describe package(p) do
