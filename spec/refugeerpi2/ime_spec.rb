@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-packages = %w(ibus-anthy)
+packages = %w(dbus-x11 fcitx-anthy)
 
 packages.each do |p|
   describe package(p) do
