@@ -1,6 +1,13 @@
 # Web アプリに関する spec
 
-packages = %w(nginx firebird2.5-superclassic firebird-dev nodejs)
+packages = %w(
+nginx
+sqlite3
+libsqlite3-dev
+firebird2.5-superclassic
+firebird-dev
+nodejs
+)
 services = %w(refugee-webapp refugee-input-server refugee-com-server)
 
 packages.each do |p|
