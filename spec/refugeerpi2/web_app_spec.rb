@@ -21,3 +21,11 @@ services.each do |s|
     it { should be_enabled }
   end
 end
+
+describe file('/etc/nginx/sites-available/refugee_manager') do
+  it { should be_exist }
+end
+
+describe file('/etc/nginx/sites-enabled/refugee_manager') do
+  it { should be_linked_to('../sites-available/refugee_manager') }
+end
